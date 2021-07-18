@@ -1,0 +1,111 @@
+.contact{
+    background-color: $gris;
+    padding-top:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: $centro;
+}
+.divider{
+    border:1px solid $blanco;
+    width:250px;
+    @include tablet{
+        width:90%;
+    }
+}
+
+.direccion{
+    font-weight:600;
+}
+
+p{
+    display:block;
+    font-size:18px;
+}
+
+.ctc-info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:10px;
+    @include tablet{
+        width:25%;
+
+    }
+}
+
+.dir{
+    margin:0;
+}
+
+#thx{
+    width:80%;
+}
+
+.anchor{
+    font-size:18px;
+    font-weight:400;
+    color: $azul;
+    &:link{
+        text-decoration:none;
+        color: $azul;
+    }
+}
+.map{
+    width:80%;
+    padding-top:20px;
+    @include tablet{
+        max-width:45%;
+    }
+}
+
+#txt{
+     text-align:$centro;
+    font-weight:400;
+    width:80%;
+    line-height:2em;
+}
+#last{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.icon{
+    &:before{
+        color:$azul;
+        font-size:40px;
+    }
+}
+
+#last2{
+    width:40%;
+    display:flex;
+    justify-content: space-around;
+}
+.anchor2{
+    font-weight:400;
+    font-size: 18px;
+    color:$azul;
+}
+.ctc-block{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    @include tablet{
+        flex-flow: column wrap;
+        width:100%;
+        max-height:550px;
+        box-sizing: border-box;
+
+    }
+}
+#fax{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    @include tablet{
+        flex-direction:row;
+        align-items: center;
+    }
+}
